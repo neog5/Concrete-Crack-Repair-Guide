@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.CorrosionCrackBeam"
-    android:orientation="vertical">
+    android:background="#ECD369"
+    android:orientation="vertical"
+    tools:context=".Activities.CorrosionCrackBeam">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -25,13 +26,25 @@
                     android:id="@+id/imageView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
                     app:srcCompat="@drawable/corrosion_crack_beam" />
 
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:gravity="center"
+                    android:text="Corrosion Crack Beam"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="240sp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center"
+                    android:background="@color/black" />
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
