@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ConcreteCrackRepairGuide">
-        <activity android:name=".Activities.CorrosionCrackBeam"></activity>
+        <activity android:name=".Activities.HeavingConcreteCrack"></activity>
+        <activity android:name=".Activities.Expansion1" />
+        <activity android:name=".Activities.CorrosionCrackBeam" />
         <activity android:name=".Activities.TorsionalCrack" />
         <activity android:name=".Activities.SteppedCrack2" />
         <activity android:name=".Activities.SteppedCrack1" />

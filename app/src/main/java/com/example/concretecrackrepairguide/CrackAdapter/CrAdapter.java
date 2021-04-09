@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.concretecrackrepairguide.Activities.CorrosionCrackBeam;
 import com.example.concretecrackrepairguide.Activities.CorrosionCrackBeam1;
+import com.example.concretecrackrepairguide.Activities.CorrosionCrackColumn;
 import com.example.concretecrackrepairguide.Activities.DiagonalCrack;
 import com.example.concretecrackrepairguide.MainActivity;
 import com.example.concretecrackrepairguide.Model.CrackModel;
@@ -59,8 +60,8 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                         i = new Intent(cnt, CorrosionCrackBeam1.class);
                         cnt.startActivity(i);
                         break;
-                   /* case 3:
-                        i = new Intent(cnt, CorrosionCrackBeam.class);
+                    case 2:
+                        i = new Intent(cnt, CorrosionCrackColumn.class);
                         cnt.startActivity(i);
                         break;
                     case 4:
@@ -70,7 +71,7 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                     case 5:
                         i = new Intent(cnt, DiagonalCrack.class);
                         cnt.startActivity(i);
-                        break;*/
+                        break;
 
                     default:
                         break;
