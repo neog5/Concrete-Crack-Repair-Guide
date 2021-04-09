@@ -9,6 +9,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ConcreteCrackRepairGuide">
+        <activity android:name=".Activities.CorrosionCrackBeam"></activity>
+        <activity android:name=".Activities.TorsionalCrack" />
+        <activity android:name=".Activities.SteppedCrack2" />
+        <activity android:name=".Activities.SteppedCrack1" />
+        <activity android:name=".Activities.SteppedCrack" />
+        <activity android:name=".Activities.ShearCrack" />
+        <activity android:name=".Activities.Settling1" />
+        <activity android:name=".Activities.Settling" />
+        <activity android:name=".Activities.PrematureDrying" />
+        <activity android:name=".Activities.PlasticShrinkage1" />
+        <activity android:name=".Activities.PlasticShrinkage" />
+        <activity android:name=".Activities.Overload" />
+        <activity android:name=".Activities.HorizontalCrack1" />
+        <activity android:name=".Activities.HorizontalCrack" />
+        <activity android:name=".Activities.HeavingConcreteCrack1" />
+        <activity android:name=".Activities.FlexureCrack4" />
+        <activity android:name=".Activities.FlexureCrack3" />
+        <activity android:name=".Activities.FlexureCrack2" />
+        <activity android:name=".Activities.FlexureCrack1" />
+        <activity android:name=".Activities.FlexureCrack" />
+        <activity android:name=".Activities.Expansion" />
+        <activity android:name=".Activities.DiagonalCrack2" />
+        <activity android:name=".Activities.DiagonalCrack1" />
+        <activity android:name=".Activities.CorrosionCrackBeam1" />
+        <activity android:name=".Activities.CorrosionCrackColumn" />
+        <activity android:name=".Activities.CrazedConcrete1" />
+        <activity android:name=".Activities.Crazing1" />
+        <activity android:name=".Activities.DiagonalCrack" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,6 +44,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
