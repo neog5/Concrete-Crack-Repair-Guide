@@ -22,7 +22,7 @@ public class CorrosionCrackBeam extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.rv1);
         ArrayList<Expand> list = new ArrayList<>();
 
-        list.add(new Expand("Info" , "•\tCorrosion crack in reinforced concrete beam caused along the line of reinforcement. Because of these crack concrete be apart from the reinforcing bars.These crack is also called bond crack."));
+        list.add(new Expand("Info :" , "•\tCorrosion crack in reinforced concrete beam caused along the line of reinforcement. Because of these crack concrete be apart from the reinforcing bars.These crack is also called bond crack."));
 
 
         ExAdapter adapter = new ExAdapter(list, this);
@@ -32,3 +32,4 @@ public class CorrosionCrackBeam extends AppCompatActivity {
         recyclerView.setLayoutManager(linearLayoutManager);
     }
 }
+

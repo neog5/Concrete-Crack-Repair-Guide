@@ -19,10 +19,11 @@ public class SteppedCrack extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stepped_crack);
 
-        RecyclerView recyclerView = findViewById(R.id.rv2);
+        RecyclerView recyclerView = findViewById(R.id.rv27);
         ArrayList<Expand> list = new ArrayList<>();
 
-        list.add(new Expand("Info" , "•\tCorrosion crack in reinforced concrete beam caused along the line of reinforcement. Because of these crack concrete be apart from the reinforcing bars.These crack is also called bond crack."));
+        list.add(new Expand("Info :" , "• This type of cracks are easy to identify as they are on the exterior side of the wall.\n" +
+                "• The stair-stepping crack is caused by separation in the brick by shifting foundations."));
 
 
         ExAdapter adapter = new ExAdapter(list, this);

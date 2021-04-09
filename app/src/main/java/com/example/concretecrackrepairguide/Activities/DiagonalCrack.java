@@ -22,12 +22,14 @@ public class DiagonalCrack extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diagonal_crack);
 
-        RecyclerView recyclerView = findViewById(R.id.rv2);
+        RecyclerView recyclerView = findViewById(R.id.rv6);
         ArrayList<Expand> list = new ArrayList<>();
 
-        list.add(new Expand("Crack1" , "defination"));
-        list.add(new Expand("Crack2" , "defination"));
-        list.add(new Expand("crack3" , "defination"));
+        list.add(new Expand("Characteristics :" , "• Runs diagonally across the section.\n" +
+                "• It can occur anywhere in the height.\n" +
+                "• Crack has uniform thickness."));
+        list.add(new Expand("Possible reasons :" , "• Load carrying capacity of the column is inadequate\n" +
+                "• Cross-section or main reinforcement is insufficient."));
 
         ExAdapter adapter = new ExAdapter(list, this);
         recyclerView.setAdapter(adapter);

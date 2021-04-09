@@ -19,10 +19,10 @@ public class HeavingConcreteCrack extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_heaving_concrete_crack);
 
-        RecyclerView recyclerView = findViewById(R.id.rv2);
+        RecyclerView recyclerView = findViewById(R.id.rv16);
         ArrayList<Expand> list = new ArrayList<>();
 
-        list.add(new Expand("Info" , "•\tCorrosion crack in reinforced concrete beam caused along the line of reinforcement. Because of these crack concrete be apart from the reinforcing bars.These crack is also called bond crack."));
+        list.add(new Expand("Info :" , "• Due to decreases in the thermal temperature, the ground freezes. This ground movement due to freezing causes cracks in concrete which can be termed as heaving concrete crack."));
 
 
         ExAdapter adapter = new ExAdapter(list, this);

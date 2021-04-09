@@ -19,10 +19,13 @@ public class PlasticShrinkage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plastic_shrinkage);
 
-        RecyclerView recyclerView = findViewById(R.id.rv2);
+        RecyclerView recyclerView = findViewById(R.id.rv21);
         ArrayList<Expand> list = new ArrayList<>();
 
-        list.add(new Expand("Info" , "•\tCorrosion crack in reinforced concrete beam caused along the line of reinforcement. Because of these crack concrete be apart from the reinforcing bars.These crack is also called bond crack."));
+        list.add(new Expand("Characteristics :" , "• Plastic shrinkage cracks typically occur on horizontal surfaces exposed to the atmosphere.\n" +
+                "• Plastic shrinkage cracks are typically two to four inches deep and approximately one-eighth inch wide.\n" +
+                "• The cracks tend to follow the edges of large aggregate particles or reinforcing bars and never break through the aggregate particles.69" +
+                ""));
 
 
         ExAdapter adapter = new ExAdapter(list, this);

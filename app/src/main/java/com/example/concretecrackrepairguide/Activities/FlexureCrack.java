@@ -19,11 +19,16 @@ public class FlexureCrack extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flexure_crack);
 
-        RecyclerView recyclerView = findViewById(R.id.rv2);
+        RecyclerView recyclerView = findViewById(R.id.rv11);
         ArrayList<Expand> list = new ArrayList<>();
 
-        list.add(new Expand("Info" , "•\tCorrosion crack in reinforced concrete beam caused along the line of reinforcement. Because of these crack concrete be apart from the reinforcing bars.These crack is also called bond crack."));
-
+        list.add(new Expand("Characteristics :" , "• It generate in maximum moment region.\n" +
+                "• Flexural crack may be single or in groups.\n" +
+                "• Maximum width at the bottom or top of the beam.\n" +
+                "• This type of crack also occurs in slab."));
+        list.add(new Expand("Possible reasons :" , "• Flexural capacity of beam is insufficient.\n" +
+                "• When cross section of the beam or reinforcement in beam is insufficient.\n" +
+                "• Caused due to more than defined load."));
 
         ExAdapter adapter = new ExAdapter(list, this);
         recyclerView.setAdapter(adapter);

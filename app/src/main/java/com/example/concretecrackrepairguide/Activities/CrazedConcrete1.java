@@ -19,10 +19,12 @@ public class CrazedConcrete1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crazed_concrete1);
 
-        RecyclerView recyclerView = findViewById(R.id.rv2);
+        RecyclerView recyclerView = findViewById(R.id.rv4);
         ArrayList<Expand> list = new ArrayList<>();
 
-        list.add(new Expand("Info" , "•\tCorrosion crack in reinforced concrete beam caused along the line of reinforcement. Because of these crack concrete be apart from the reinforcing bars.These crack is also called bond crack."));
+        list.add(new Expand("Info :" , "• Craze cracks on concrete is when the surface of concrete develops a lot of fine cracks.\n" +
+                "• Crazing of concrete is a result of conditions and curing methods at the point the concrete is laid or even the way it is finished.\n" +
+                "• Crazing usually only shows up within the first week after the slab was laid.\n"));
 
 
         ExAdapter adapter = new ExAdapter(list, this);

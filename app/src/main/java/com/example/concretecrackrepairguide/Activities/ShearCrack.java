@@ -19,11 +19,15 @@ public class ShearCrack extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shear_crack);
 
-        RecyclerView recyclerView = findViewById(R.id.rv2);
+        RecyclerView recyclerView = findViewById(R.id.rv26);
         ArrayList<Expand> list = new ArrayList<>();
 
-        list.add(new Expand("Info" , "•\tCorrosion crack in reinforced concrete beam caused along the line of reinforcement. Because of these crack concrete be apart from the reinforcing bars.These crack is also called bond crack."));
-
+        list.add(new Expand("Characteristics :" , "• Generate nearer to the supports of the beam\n" +
+                "• It may be single or in groups.\n" +
+                "• Maximum width at neutral axis region or at the bottom of the beam."));
+        list.add(new Expand("Possible reasons :" , "• Shear capacity of beam is insufficient.\n" +
+                "• Cross section on torsional reinforcement is insufficient.\n" +
+                "• Caused due to loaded more than define load."));
 
         ExAdapter adapter = new ExAdapter(list, this);
         recyclerView.setAdapter(adapter);

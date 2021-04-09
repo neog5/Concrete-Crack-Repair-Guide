@@ -19,10 +19,12 @@ public class HorizontalCrack1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_horizontal_crack1);
 
-        RecyclerView recyclerView = findViewById(R.id.rv2);
+        RecyclerView recyclerView = findViewById(R.id.rv19);
         ArrayList<Expand> list = new ArrayList<>();
 
-        list.add(new Expand("Info" , "•\tCorrosion crack in reinforced concrete beam caused along the line of reinforcement. Because of these crack concrete be apart from the reinforcing bars.These crack is also called bond crack."));
+        list.add(new Expand("Characteristics :" , "• Occur at the beam column junction.\n" +
+                "• Moment resistance capacity of column inadequate in the corresponding region.\n" +
+                "• Inadequate quantum of reinforcement or disposition of reinforcement not satisfactory."));
 
 
         ExAdapter adapter = new ExAdapter(list, this);

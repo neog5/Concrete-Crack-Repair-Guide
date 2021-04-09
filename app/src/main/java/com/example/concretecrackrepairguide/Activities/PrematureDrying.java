@@ -19,10 +19,11 @@ public class PrematureDrying extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_premature_drying);
 
-        RecyclerView recyclerView = findViewById(R.id.rv2);
+        RecyclerView recyclerView = findViewById(R.id.rv23);
         ArrayList<Expand> list = new ArrayList<>();
 
-        list.add(new Expand("Info" , "•\tCorrosion crack in reinforced concrete beam caused along the line of reinforcement. Because of these crack concrete be apart from the reinforcing bars.These crack is also called bond crack."));
+        list.add(new Expand("Info :" , "• Crazing cracks are very fine, surface cracks that resemble spider webs or shattered glass. When the top of a concrete slab loses moisture too quickly, crazing cracks will likely appear. While unsightly, crazing cracks are not a structural concern.\n" +
+                "• Crusting cracks typically happen during the concrete stamping process, which is a way of adding texture or pattern to concrete surfaces. "));
 
 
         ExAdapter adapter = new ExAdapter(list, this);

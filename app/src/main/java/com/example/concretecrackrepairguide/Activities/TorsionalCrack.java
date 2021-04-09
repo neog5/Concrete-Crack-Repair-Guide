@@ -19,12 +19,13 @@ public class TorsionalCrack extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_torsional_crack);
 
-        RecyclerView recyclerView = findViewById(R.id.rv2);
+        RecyclerView recyclerView = findViewById(R.id.rv30);
         ArrayList<Expand> list = new ArrayList<>();
 
-        list.add(new Expand("Info" , "•\tCorrosion crack in reinforced concrete beam caused along the line of reinforcement. Because of these crack concrete be apart from the reinforcing bars.These crack is also called bond crack."));
-
-
+        list.add(new Expand("Characteristics :" , "• Generate nearer to the maximum torsional region.\n" +
+                "• Formed in single way, generally occurs in uniform width."));
+        list.add(new Expand("Possible reasons :" , "•• Torsional strength of beam is insufficient.\n" +
+                "• Cross section or torsional reinforcement is insufficient."));
         ExAdapter adapter = new ExAdapter(list, this);
         recyclerView.setAdapter(adapter);
 

@@ -19,10 +19,14 @@ public class DiagonalCrack1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diagonal_crack1);
 
-        RecyclerView recyclerView = findViewById(R.id.rv2);
+        RecyclerView recyclerView = findViewById(R.id.rv7);
         ArrayList<Expand> list = new ArrayList<>();
 
-        list.add(new Expand("Info" , "•\tCorrosion crack in reinforced concrete beam caused along the line of reinforcement. Because of these crack concrete be apart from the reinforcing bars.These crack is also called bond crack."));
+        list.add(new Expand("Characteristics :" , "• Runs diagonally across the section.\n" +
+                "• It can occur anywhere in the height.\n" +
+                "• Crack has uniform thickness."));
+        list.add(new Expand("Possible reasons :" , "• Load carrying capacity of the column is inadequate\n" +
+                "• Cross-section or main reinforcement is insufficient."));
 
 
         ExAdapter adapter = new ExAdapter(list, this);

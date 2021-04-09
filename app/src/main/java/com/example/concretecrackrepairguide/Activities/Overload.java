@@ -19,10 +19,10 @@ public class Overload extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_overload);
 
-        RecyclerView recyclerView = findViewById(R.id.rv2);
+        RecyclerView recyclerView = findViewById(R.id.rv20);
         ArrayList<Expand> list = new ArrayList<>();
 
-        list.add(new Expand("Info" , "•\tCorrosion crack in reinforced concrete beam caused along the line of reinforcement. Because of these crack concrete be apart from the reinforcing bars.These crack is also called bond crack."));
+        list.add(new Expand("Info :" , "• Although concrete is a very strong building material, it does have its limits. Placing excessive amounts of weight on top of a concrete slab can cause cracking."));
 
 
         ExAdapter adapter = new ExAdapter(list, this);

@@ -19,10 +19,14 @@ public class CorrosionCrackColumn extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_corrosion_crack_column);
 
-        RecyclerView recyclerView = findViewById(R.id.rv4);
+        RecyclerView recyclerView = findViewById(R.id.rv3);
         ArrayList<Expand> list = new ArrayList<>();
 
-        list.add(new Expand("Info" , "•\tCorrosion crack in reinforced concrete beam caused along the line of reinforcement. Because of these crack concrete be apart from the reinforcing bars.These crack is also called bond crack."));
+        list.add(new Expand("Characteristics :" , "• Runs along the line of reinforcement.\n" +
+                "• Generally it has uniform width.\n" +
+                "• Also occurs in slab."));
+        list.add(new Expand("Possible reasons :" , "• Due to these crack bond between reinforcement bars and concrete is not sufficient.\n" +
+                "• Occurs due to corrosion of bars."));
 
 
         ExAdapter adapter = new ExAdapter(list, this);
