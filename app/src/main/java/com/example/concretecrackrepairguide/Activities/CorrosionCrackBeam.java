@@ -19,7 +19,7 @@ public class CorrosionCrackBeam extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_corrosion_crack_beam);
 
-        RecyclerView recyclerView = findViewById(R.id.rv2);
+        RecyclerView recyclerView = findViewById(R.id.rv1);
         ArrayList<Expand> list = new ArrayList<>();
 
         list.add(new Expand("Info" , "•\tCorrosion crack in reinforced concrete beam caused along the line of reinforcement. Because of these crack concrete be apart from the reinforcing bars.These crack is also called bond crack."));
