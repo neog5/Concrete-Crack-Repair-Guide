@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new CrackModel(R.drawable.stepped_crack1, "Stepped Crack 1"));
         list.add(new CrackModel(R.drawable.stepped_crack2, "Stepped Crack 2"));
         list.add(new CrackModel(R.drawable.torsional_crack, "Torsional Crack"));
-
+        list.add(new CrackModel(R.drawable.corrosion_crack_beam, "Crack Details"));
 
 
         CrAdapter adapter = new CrAdapter(list, this);
