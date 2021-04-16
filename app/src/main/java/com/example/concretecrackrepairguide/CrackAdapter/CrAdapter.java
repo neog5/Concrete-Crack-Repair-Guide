@@ -117,6 +117,180 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                                 "• Crazing of concrete is a result of conditions and curing methods at the point the concrete is laid or even the way it is finished.\n" +
                                 "• Crazing usually only shows up within the first week after the slab was laid.\n"));
                         break;
+
+                    case 5:
+
+                        list2.add(new Expand("Info :" , "• Craze cracks on concrete is when the surface of concrete develops a lot of fine cracks.\n" +
+                                "• Crazing of concrete is a result of conditions and curing methods at the point the concrete is laid or even the way it is finished.\n" +
+                                "• Crazing usually only shows up within the first week after the slab was laid.\n"));
+                        break;
+
+                    case 6:
+                        list2.add(new Expand("Characteristics :" , "• Runs diagonally across the section.\n" +
+                                "• It can occur anywhere in the height.\n" +
+                                "• Crack has uniform thickness."));
+                        list2.add(new Expand("Possible reasons :" , "• Load carrying capacity of the column is inadequate\n" +
+                                "• Cross-section or main reinforcement is insufficient."));
+                        break;
+
+                    case 7:
+                        list2.add(new Expand("Characteristics :" , "• Runs diagonally across the section.\n" +
+                                "• It can occur anywhere in the height.\n" +
+                                "• Crack has uniform thickness."));
+                        list2.add(new Expand("Possible reasons :" , "• Load carrying capacity of the column is inadequate\n" +
+                                "• Cross-section or main reinforcement is insufficient."));
+                        break;
+
+                    case 8:
+                        list2.add(new Expand("Characteristics :" , "• Runs diagonally across the section.\n" +
+                                "• It can occur anywhere in the height.\n" +
+                                "• Crack has uniform thickness."));
+                        list2.add(new Expand("Possible reasons :" , "• Load carrying capacity of the column is inadequate\n" +
+                                "• Cross-section or main reinforcement is insufficient."));
+                        break;
+
+                    case 9:
+                        list2.add(new Expand("Characteristics :" , "• Heat causes concrete to expand.\n" +
+                                "• The expanding force can be enough to cause concrete to crack"));
+                        break;
+
+                    case 10:
+                        list2.add(new Expand("Characteristics :" , "• Heat causes concrete to expand.\n" +
+                                "• The expanding force can be enough to cause concrete to crack"));
+                        break;
+
+                    case 11:
+                        list2.add(new Expand("Characteristics :" , "• It generate in maximum moment region.\n" +
+                                "• Flexural crack may be single or in groups.\n" +
+                                "• Maximum width at the bottom or top of the beam.\n" +
+                                "• This type of crack also occurs in slab."));
+                        list2.add(new Expand("Possible reasons :" , "• Flexural capacity of beam is insufficient.\n" +
+                                "• When cross section of the beam or reinforcement in beam is insufficient.\n" +
+                                "• Caused due to more than defined load."));
+                        break;
+
+                    case 12:
+                        list2.add(new Expand("Characteristics :" , "• It generate in maximum moment region.\n" +
+                                "• Flexural crack may be single or in groups.\n" +
+                                "• Maximum width at the bottom or top of the beam.\n" +
+                                "• This type of crack also occurs in slab."));
+                        list2.add(new Expand("Possible reasons :" , "• Flexural capacity of beam is insufficient.\n" +
+                                "• When cross section of the beam or reinforcement in beam is insufficient.\n" +
+                                "• Caused due to more than defined load."));
+                        break;
+
+                    case 13:
+                        list2.add(new Expand("Characteristics :" , "• It generate in maximum moment region.\n" +
+                                "• Flexural crack may be single or in groups.\n" +
+                                "• Maximum width at the bottom or top of the beam.\n" +
+                                "• This type of crack also occurs in slab."));
+                        list2.add(new Expand("Possible reasons :" , "• Flexural capacity of beam is insufficient.\n" +
+                                "• When cross section of the beam or reinforcement in beam is insufficient.\n" +
+                                "• Caused due to more than defined load."));
+                        break;
+
+                    case 14:
+                        list2.add(new Expand("Characteristics :" , "• It generate in maximum moment region.\n" +
+                                "• Flexural crack may be single or in groups.\n" +
+                                "• Maximum width at the bottom or top of the beam.\n" +
+                                "• This type of crack also occurs in slab."));
+                        list2.add(new Expand("Possible reasons :" , "• Flexural capacity of beam is insufficient.\n" +
+                                "• When cross section of the beam or reinforcement in beam is insufficient.\n" +
+                                "• Caused due to more than defined load."));
+                        break;
+
+                    case 15:
+                        list2.add(new Expand("Characteristics :" , "• It generate in maximum moment region.\n" +
+                                "• Flexural crack may be single or in groups.\n" +
+                                "• Maximum width at the bottom or top of the beam.\n" +
+                                "• This type of crack also occurs in slab."));
+                        list2.add(new Expand("Possible reasons :" , "• Flexural capacity of beam is insufficient.\n" +
+                                "• When cross section of the beam or reinforcement in beam is insufficient.\n" +
+                                "• Caused due to more than defined load."));
+                        break;
+
+                    case 16:
+                        list2.add(new Expand("Info :" , "• Due to decreases in the thermal temperature, the ground freezes. This ground movement due to freezing causes cracks in concrete which can be termed as heaving concrete crack."));
+                        break;
+
+                    case 17:
+                        list2.add(new Expand("Info :" , "• Due to decreases in the thermal temperature, the ground freezes. This ground movement due to freezing causes cracks in concrete which can be termed as heaving concrete crack."));
+                        break;
+
+                    case 18:
+                        list2.add(new Expand("Characteristics :" , "• Occur at the beam column junction.\n" +
+                                "• Moment resistance capacity of column inadequate in the corresponding region.\n" +
+                                "• Inadequate quantum of reinforcement or disposition of reinforcement not satisfactory."));
+                        break;
+
+                    case 19:
+                        list2.add(new Expand("Characteristics :" , "• Occur at the beam column junction.\n" +
+                                "• Moment resistance capacity of column inadequate in the corresponding region.\n" +
+                                "• Inadequate quantum of reinforcement or disposition of reinforcement not satisfactory."));
+                        break;
+
+                    case 20:
+                        list2.add(new Expand("Info :" , "• Although concrete is a very strong building material, it does have its limits. Placing excessive amounts of weight on top of a concrete slab can cause cracking."));
+                        break;
+
+                    case 21:
+                        list2.add(new Expand("Characteristics :" , "• Plastic shrinkage cracks typically occur on horizontal surfaces exposed to the atmosphere.\n" +
+                                "• Plastic shrinkage cracks are typically two to four inches deep and approximately one-eighth inch wide.\n" +
+                                "• The cracks tend to follow the edges of large aggregate particles or reinforcing bars and never break through the aggregate particles.69" +
+                                ""));
+                        break;
+
+                    case 22:
+                        list2.add(new Expand("Characteristics :" , "• Plastic shrinkage cracks typically occur on horizontal surfaces exposed to the atmosphere.\n" +
+                                "• Plastic shrinkage cracks are typically two to four inches deep and approximately one-eighth inch wide.\n" +
+                                "• The cracks tend to follow the edges of large aggregate particles or reinforcing bars and never break through the aggregate particles.69" +
+                                ""));
+                        break;
+
+                    case 23:
+                        list2.add(new Expand("Info :" , "• Crazing cracks are very fine, surface cracks that resemble spider webs or shattered glass. When the top of a concrete slab loses moisture too quickly, crazing cracks will likely appear. While unsightly, crazing cracks are not a structural concern.\n" +
+                                "• Crusting cracks typically happen during the concrete stamping process, which is a way of adding texture or pattern to concrete surfaces. "));
+                        break;
+
+                    case 24:
+                        list2.add(new Expand("Info :" , "• When the void is created in the soil particles below the concrete surface, settling concrete cracks are formed."));
+                        break;
+
+                    case 25:
+                        list2.add(new Expand("Info :" , "• When the void is created in the soil particles below the concrete surface, settling concrete cracks are formed."));
+                        break;
+
+                    case 26:
+                        list2.add(new Expand("Characteristics :" , "• Generate nearer to the supports of the beam\n" +
+                                "• It may be single or in groups.\n" +
+                                "• Maximum width at neutral axis region or at the bottom of the beam."));
+                        list2.add(new Expand("Possible reasons :" , "• Shear capacity of beam is insufficient.\n" +
+                                "• Cross section on torsional reinforcement is insufficient.\n" +
+                                "• Caused due to loaded more than define load."));
+                        break;
+
+                    case 27:
+                        list2.add(new Expand("Info :" , "• This type of cracks are easy to identify as they are on the exterior side of the wall.\n" +
+                                "• The stair-stepping crack is caused by separation in the brick by shifting foundations."));
+                        break;
+
+                    case 28:
+                        list2.add(new Expand("Info :" , "• This type of cracks are easy to identify as they are on the exterior side of the wall.\n" +
+                                "• The stair-stepping crack is caused by separation in the brick by shifting foundations."));
+                        break;
+
+                    case 29:
+                        list2.add(new Expand("Info :" , "• This type of cracks are easy to identify as they are on the exterior side of the wall.\n" +
+                                "• The stair-stepping crack is caused by separation in the brick by shifting foundations."));
+                        break;
+
+                    case 30:
+                        list2.add(new Expand("Characteristics :" , "• Generate nearer to the maximum torsional region.\n" +
+                                "• Formed in single way, generally occurs in uniform width."));
+                        list2.add(new Expand("Possible reasons :" , "•• Torsional strength of beam is insufficient.\n" +
+                                "• Cross section or torsional reinforcement is insufficient."));
+                        break;
+
                     default:
                         break;
                 }
