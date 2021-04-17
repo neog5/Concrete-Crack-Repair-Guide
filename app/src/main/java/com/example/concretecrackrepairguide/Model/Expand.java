@@ -5,17 +5,19 @@ import android.os.Parcelable;
 
 public class Expand implements Parcelable {
     String title,content;
+    int background;
     boolean expanded;
 
-    public Expand(String title, String content) {
+    public Expand(String title, String content, int background) {
         this.title = title;
         this.content = content;
-        this.expanded = false;
+        this.background = background;
     }
 
     protected Expand(Parcel in) {
         title = in.readString();
         content = in.readString();
+        background = in.readInt();
         expanded = in.readByte() != 0;
     }
 
@@ -30,14 +32,6 @@ public class Expand implements Parcelable {
             return new Expand[size];
         }
     };
-
-    public boolean isExpanded() {
-        return expanded;
-    }
-
-    public void setExpanded(boolean expanded) {
-        this.expanded = expanded;
-    }
 
     public String getTitle() {
         return title;
@@ -55,6 +49,21 @@ public class Expand implements Parcelable {
         this.content = content;
     }
 
+    public int getBackground() {
+        return background;
+    }
+
+    public void setBackground(int background) {
+        this.background = background;
+    }
+
+    public boolean isExpanded() {
+        return expanded;
+    }
+
+    public void setExpanded(boolean expanded) {
+        this.expanded = expanded;
+    }
 
     @Override
     public int describeContents() {
@@ -65,6 +74,7 @@ public class Expand implements Parcelable {
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(title);
         dest.writeString(content);
+        dest.writeInt(background);
         dest.writeByte((byte) (expanded ? 1 : 0));
     }
 }

@@ -37,7 +37,7 @@ public class ExAdapter extends RecyclerView.Adapter<ExAdapter.ViewHolder2>{
     @Override
     public void onBindViewHolder(@NonNull ViewHolder2 holder, int position) {
         Expand model = list2.get(position);
-        holder.rootL.setBackgroundResource(R.drawable.title_background2);
+        holder.rootL.setBackgroundResource(list2.get(position).getBackground());
         holder.title.setText(model.getTitle());
         holder.content.setText(model.getContent());
         holder.content.setVisibility(list2.get(position).isExpanded() ? View.VISIBLE : View.GONE);

@@ -4,7 +4,6 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="5dp"
     android:layout_marginBottom="5dp"
-    android:background="@drawable/expanding_background"
     android:orientation="vertical"
     android:padding="10dp"
     android:id="@+id/sample_expand">
