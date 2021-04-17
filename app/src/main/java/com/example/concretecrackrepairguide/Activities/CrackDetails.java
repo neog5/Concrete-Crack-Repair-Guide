@@ -10,12 +10,19 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.concretecrackrepairguide.CrackAdapter.ExAdapter;
 import com.example.concretecrackrepairguide.Model.CrackModel;
 import com.example.concretecrackrepairguide.Model.Expand;
 import com.example.concretecrackrepairguide.Model.RepTech;
 import com.example.concretecrackrepairguide.R;
+import com.example.concretecrackrepairguide.Reptech.EpoxyInjection;
+import com.example.concretecrackrepairguide.Reptech.FlexibleSealing;
+import com.example.concretecrackrepairguide.Reptech.Grouting;
+import com.example.concretecrackrepairguide.Reptech.Overlays;
+import com.example.concretecrackrepairguide.Reptech.RoutingAndSealing;
+import com.example.concretecrackrepairguide.Reptech.Stitching;
 
 import java.util.ArrayList;
 
@@ -102,7 +109,55 @@ public class CrackDetails extends AppCompatActivity {
                 down.setVisibility(repTech.isExpanded() ? View.GONE : View.VISIBLE);
 
             }
-        });
 
+        });
+        epo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(CrackDetails.this, EpoxyInjection.class);
+                startActivity(i);
+            }
+        });
+        ras.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(CrackDetails.this, RoutingAndSealing.class);
+                startActivity(i);
+            }
+        });
+        gro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(CrackDetails.this, Grouting.class);
+                startActivity(i);
+            }
+        });
+        sti.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(CrackDetails.this, Stitching.class);
+                startActivity(i);
+            }
+        });
+        fls.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(CrackDetails.this, FlexibleSealing.class);
+                startActivity(i);
+            }
+        });
+        ovr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(CrackDetails.this, Overlays.class);
+                startActivity(i);
+            }
+        });
     }
 }

@@ -6,7 +6,8 @@
     android:layout_marginBottom="5dp"
     android:background="@drawable/expanding_background"
     android:orientation="vertical"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:id="@+id/sample_expand">
 
 
     <LinearLayout
@@ -47,5 +48,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="content"
-        android:textSize="18sp" />
+        android:textSize="24sp" />
 </LinearLayout>

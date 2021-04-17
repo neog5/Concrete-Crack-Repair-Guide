@@ -94,42 +94,48 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="•  Epoxy Injection"
-                        android:textColor="#2196F3" />
+                        android:textColor="#2196F3"
+                        android:textSize="24sp"/>
 
                     <TextView
                         android:id="@+id/ras"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="•  Routing and Sealing"
-                        android:textColor="#2196F3" />
+                        android:textColor="#2196F3"
+                        android:textSize="24sp"/>
 
                     <TextView
                         android:id="@+id/gro"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="•  Grouting"
-                        android:textColor="#2196F3" />
+                        android:textColor="#2196F3"
+                        android:textSize="24sp"/>
 
                     <TextView
                         android:id="@+id/sti"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="•  Stitching"
-                        android:textColor="#2196F3" />
+                        android:textColor="#2196F3"
+                        android:textSize="24sp"/>
 
                     <TextView
                         android:id="@+id/fls"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="•  Flexible Sealing"
-                        android:textColor="#2196F3" />
+                        android:textColor="#2196F3"
+                        android:textSize="24sp"/>
 
                     <TextView
                         android:id="@+id/ovr"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="•  Overlays"
-                        android:textColor="#2196F3" />
+                        android:textColor="#2196F3"
+                        android:textSize="24sp"/>
                 </LinearLayout>
             </LinearLayout>
 

@@ -29,6 +29,7 @@ public class ExAdapter extends RecyclerView.Adapter<ExAdapter.ViewHolder2>{
     @Override
     public ViewHolder2 onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(cnt).inflate(R.layout.sample_expandable,parent,false);
+
         return new ExAdapter.ViewHolder2(view);
 
     }
@@ -36,6 +37,7 @@ public class ExAdapter extends RecyclerView.Adapter<ExAdapter.ViewHolder2>{
     @Override
     public void onBindViewHolder(@NonNull ViewHolder2 holder, int position) {
         Expand model = list2.get(position);
+        holder.rootL.setBackgroundResource(R.drawable.title_background2);
         holder.title.setText(model.getTitle());
         holder.content.setText(model.getContent());
         holder.content.setVisibility(list2.get(position).isExpanded() ? View.VISIBLE : View.GONE);
@@ -50,7 +52,7 @@ public class ExAdapter extends RecyclerView.Adapter<ExAdapter.ViewHolder2>{
 
     public class ViewHolder2 extends RecyclerView.ViewHolder {
         TextView title, content, up, down;
-        LinearLayout ll;
+        LinearLayout ll,rootL;
 
         public ViewHolder2(@NonNull View itemView) {
 
@@ -61,6 +63,7 @@ public class ExAdapter extends RecyclerView.Adapter<ExAdapter.ViewHolder2>{
             up = itemView.findViewById(R.id.up_arrow);
             down = itemView.findViewById(R.id.down_arrow);
             ll = itemView.findViewById(R.id.ex_linear_hori);
+            rootL = itemView.findViewById(R.id.sample_expand);
             ll.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

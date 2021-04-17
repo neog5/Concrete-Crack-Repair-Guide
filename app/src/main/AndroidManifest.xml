@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ConcreteCrackRepairGuide">
-        <activity android:name=".Activities.CrackDetails"></activity>
+        <activity android:name=".Reptech.Overlays"></activity>
+        <activity android:name=".Reptech.FlexibleSealing" />
+        <activity android:name=".Reptech.Stitching" />
+        <activity android:name=".Reptech.Grouting" />
+        <activity android:name=".Reptech.RoutingAndSealing" />
+        <activity android:name=".Reptech.EpoxyInjection" />
+        <activity android:name=".Activities.CrackDetails" />
         <activity android:name=".Activities.CorrosionCrackColumn1" />
         <activity android:name=".Activities.HeavingConcreteCrack" />
         <activity android:name=".Activities.Expansion1" />
