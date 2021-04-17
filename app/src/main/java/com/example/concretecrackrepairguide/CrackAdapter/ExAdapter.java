@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -38,6 +39,8 @@ public class ExAdapter extends RecyclerView.Adapter<ExAdapter.ViewHolder2>{
         holder.title.setText(model.getTitle());
         holder.content.setText(model.getContent());
         holder.content.setVisibility(list2.get(position).isExpanded() ? View.VISIBLE : View.GONE);
+        holder.up.setVisibility(list2.get(position).isExpanded() ? View.VISIBLE : View.GONE);
+        holder.down.setVisibility(list2.get(position).isExpanded() ? View.GONE : View.VISIBLE);
     }
 
     @Override
@@ -46,14 +49,19 @@ public class ExAdapter extends RecyclerView.Adapter<ExAdapter.ViewHolder2>{
     }
 
     public class ViewHolder2 extends RecyclerView.ViewHolder {
-        TextView title, content;
+        TextView title, content, up, down;
+        LinearLayout ll;
+
         public ViewHolder2(@NonNull View itemView) {
 
             super(itemView);
 
             title = itemView.findViewById(R.id.title);
             content = itemView.findViewById(R.id.expandable);
-            title.setOnClickListener(new View.OnClickListener() {
+            up = itemView.findViewById(R.id.up_arrow);
+            down = itemView.findViewById(R.id.down_arrow);
+            ll = itemView.findViewById(R.id.ex_linear_hori);
+            ll.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Expand ex = list2.get(getAdapterPosition());

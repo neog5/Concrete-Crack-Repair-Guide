@@ -62,7 +62,8 @@ public class CrackDetails extends AppCompatActivity {
         //Setting the repair techniques
 
         //Initializing the TextViews
-        TextView rt, epo, ras, gro, sti, fls, ovr;
+        TextView rt, epo, ras, gro, sti, fls, ovr, up, down;
+        LinearLayout horTech = findViewById(R.id.rt_linear_hori);
         LinearLayout expTech = findViewById(R.id.expand_techniques);
         RepTech repTech = new RepTech(false);
         boolean[] list3 = it.getBooleanArrayExtra("3000 bacche");
@@ -74,10 +75,15 @@ public class CrackDetails extends AppCompatActivity {
         sti = findViewById(R.id.sti);
         fls = findViewById(R.id.fls);
         ovr = findViewById(R.id.ovr);
+        up = findViewById(R.id.up);
+        down = findViewById(R.id.down);
+
 
 
         //Hiding the LinearLayout by default
         expTech.setVisibility(View.GONE);
+        down.setVisibility(View.VISIBLE);
+        up.setVisibility(View.GONE);
         epo.setVisibility(list3[0] ? View.VISIBLE : View.GONE);
         ras.setVisibility(list3[1] ? View.VISIBLE : View.GONE);
         gro.setVisibility(list3[2] ? View.VISIBLE : View.GONE);
@@ -86,12 +92,14 @@ public class CrackDetails extends AppCompatActivity {
         ovr.setVisibility(list3[5] ? View.VISIBLE : View.GONE);
 
 
-        rt.setOnClickListener(new View.OnClickListener() {
+        horTech.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 repTech.setExpanded(!repTech.isExpanded());
                 expTech.setVisibility(repTech.isExpanded() ? View.VISIBLE : View.GONE);
+                up.setVisibility(repTech.isExpanded() ? View.VISIBLE : View.GONE);
+                down.setVisibility(repTech.isExpanded() ? View.GONE : View.VISIBLE);
 
             }
         });

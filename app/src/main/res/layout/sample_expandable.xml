@@ -2,19 +2,45 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
     android:layout_marginTop="5dp"
-    android:layout_marginBottom="5dp">
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/expanding_background"
+    android:orientation="vertical"
+    android:padding="10dp">
 
 
-    <TextView
-        android:id="@+id/title"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Characteristics"
-        android:textColor="#0B0A0A"
-        android:textSize="22sp"
-        android:textStyle="bold|italic" />
+        android:orientation="horizontal"
+        android:id="@+id/ex_linear_hori">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Characteristics  "
+            android:textColor="#0B0A0A"
+            android:textSize="22sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/down_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="▼"
+            android:textColor="#0B0A0A"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/up_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="▲"
+            android:textColor="#0B0A0A"
+            android:textSize="22sp" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/expandable"
