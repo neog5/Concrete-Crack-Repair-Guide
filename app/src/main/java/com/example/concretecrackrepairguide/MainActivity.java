@@ -25,13 +25,13 @@ public class MainActivity extends AppCompatActivity {
         list.add(new CrackModel(R.drawable.corrosion_crack_beam1, "Corrosion Crack Beam 1"));
         list.add(new CrackModel(R.drawable.corrosion_crack_column, "Corrosion Crack Column"));
         list.add(new CrackModel(R.drawable.corrosion_crack_column, "Corrosion Crack Column 1"));
-        list.add(new CrackModel(R.drawable.crazed_concrete1, "Crazed Concrete 1"));
-        list.add(new CrackModel(R.drawable.crazing1, "Crazing 1"));
+        list.add(new CrackModel(R.drawable.crazed_concrete1, "Crazing Crack"));
+        list.add(new CrackModel(R.drawable.crazing1, "Crazing Crack 1"));
         list.add(new CrackModel(R.drawable.diagonal_crack, "Diagonal Crack"));
         list.add(new CrackModel(R.drawable.diagonal_crack1, "Diagonal Crack 1"));
         list.add(new CrackModel(R.drawable.diagonal_crack2, "Diagonal Crack 2"));
-        list.add(new CrackModel(R.drawable.expansion, "Expansion"));
-        list.add(new CrackModel(R.drawable.expansion, "Expansion 1"));
+        list.add(new CrackModel(R.drawable.expansion, "Expansion Crack"));
+        list.add(new CrackModel(R.drawable.expansion, "Expansion Crack 1"));
         list.add(new CrackModel(R.drawable.flexure_crack, "Flexure Crack"));
         list.add(new CrackModel(R.drawable.flexure_crack1, "Flexure Crack 1"));
         list.add(new CrackModel(R.drawable.flexure_crack2, "Flexure Crack 2"));

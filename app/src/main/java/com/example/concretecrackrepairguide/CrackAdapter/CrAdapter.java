@@ -84,23 +84,22 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                 Intent i = new Intent(cnt , CrackDetails.class);
                 i.putExtra("Het" , model);
                 ArrayList<Expand> list2 = new ArrayList<>();
+                boolean list3[] = new boolean[6];
+
                 switch (position){
                     case 0:
-                        list2.add(new Expand("Info :" , "•\tCorrosion crack in reinforced concrete beam caused along the line of reinforcement. Because of these crack concrete be apart from the reinforcing bars.These crack is also called bond crack."));
-                        break;
 
                     case 1:
                         list2.add(new Expand("Info :" , "•\tCorrosion crack in reinforced concrete beam caused along the line of reinforcement. Because of these crack concrete be apart from the reinforcing bars.These crack is also called bond crack."));
+                        list3[0] = true;
+                        list3[1] = true;
+                        list3[2] = true;
+                        list3[3] = true;
+                        list3[4] = false;
+                        list3[5] = false;
                         break;
 
                     case 2:
-
-                        list2.add(new Expand("Characteristics :" , "• Runs along the line of reinforcement.\n" +
-                                "• Generally it has uniform width.\n" +
-                                "• Also occurs in slab."));
-                        list2.add(new Expand("Possible reasons :" , "• Due to these crack bond between reinforcement bars and concrete is not sufficient.\n" +
-                                "• Occurs due to corrosion of bars."));
-                        break;
 
                     case 3:
 
@@ -109,37 +108,32 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                                 "• Also occurs in slab."));
                         list2.add(new Expand("Possible reasons :" , "• Due to these crack bond between reinforcement bars and concrete is not sufficient.\n" +
                                 "• Occurs due to corrosion of bars."));
+                        list3[0] = true;
+                        list3[1] = true;
+                        list3[2] = true;
+                        list3[3] = true;
+                        list3[4] = false;
+                        list3[5] = false;
                         break;
 
                     case 4:
-
-                        list2.add(new Expand("Info :" , "• Craze cracks on concrete is when the surface of concrete develops a lot of fine cracks.\n" +
-                                "• Crazing of concrete is a result of conditions and curing methods at the point the concrete is laid or even the way it is finished.\n" +
-                                "• Crazing usually only shows up within the first week after the slab was laid.\n"));
-                        break;
 
                     case 5:
 
                         list2.add(new Expand("Info :" , "• Craze cracks on concrete is when the surface of concrete develops a lot of fine cracks.\n" +
                                 "• Crazing of concrete is a result of conditions and curing methods at the point the concrete is laid or even the way it is finished.\n" +
                                 "• Crazing usually only shows up within the first week after the slab was laid.\n"));
+                        list3[0] = false;
+                        list3[1] = false;
+                        list3[2] = false;
+                        list3[3] = false;
+                        list3[4] = true;
+                        list3[5] = true;
                         break;
 
                     case 6:
-                        list2.add(new Expand("Characteristics :" , "• Runs diagonally across the section.\n" +
-                                "• It can occur anywhere in the height.\n" +
-                                "• Crack has uniform thickness."));
-                        list2.add(new Expand("Possible reasons :" , "• Load carrying capacity of the column is inadequate\n" +
-                                "• Cross-section or main reinforcement is insufficient."));
-                        break;
 
                     case 7:
-                        list2.add(new Expand("Characteristics :" , "• Runs diagonally across the section.\n" +
-                                "• It can occur anywhere in the height.\n" +
-                                "• Crack has uniform thickness."));
-                        list2.add(new Expand("Possible reasons :" , "• Load carrying capacity of the column is inadequate\n" +
-                                "• Cross-section or main reinforcement is insufficient."));
-                        break;
 
                     case 8:
                         list2.add(new Expand("Characteristics :" , "• Runs diagonally across the section.\n" +
@@ -147,57 +141,35 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                                 "• Crack has uniform thickness."));
                         list2.add(new Expand("Possible reasons :" , "• Load carrying capacity of the column is inadequate\n" +
                                 "• Cross-section or main reinforcement is insufficient."));
+                        list3[0] = true;
+                        list3[1] = true;
+                        list3[2] = true;
+                        list3[3] = false;
+                        list3[4] = false;
+                        list3[5] = false;
+
                         break;
 
                     case 9:
-                        list2.add(new Expand("Characteristics :" , "• Heat causes concrete to expand.\n" +
-                                "• The expanding force can be enough to cause concrete to crack"));
-                        break;
 
                     case 10:
                         list2.add(new Expand("Characteristics :" , "• Heat causes concrete to expand.\n" +
                                 "• The expanding force can be enough to cause concrete to crack"));
+                        list3[0] = true;
+                        list3[1] = true;
+                        list3[2] = true;
+                        list3[3] = true;
+                        list3[4] = false;
+                        list3[5] = false;
                         break;
 
                     case 11:
-                        list2.add(new Expand("Characteristics :" , "• It generate in maximum moment region.\n" +
-                                "• Flexural crack may be single or in groups.\n" +
-                                "• Maximum width at the bottom or top of the beam.\n" +
-                                "• This type of crack also occurs in slab."));
-                        list2.add(new Expand("Possible reasons :" , "• Flexural capacity of beam is insufficient.\n" +
-                                "• When cross section of the beam or reinforcement in beam is insufficient.\n" +
-                                "• Caused due to more than defined load."));
-                        break;
 
                     case 12:
-                        list2.add(new Expand("Characteristics :" , "• It generate in maximum moment region.\n" +
-                                "• Flexural crack may be single or in groups.\n" +
-                                "• Maximum width at the bottom or top of the beam.\n" +
-                                "• This type of crack also occurs in slab."));
-                        list2.add(new Expand("Possible reasons :" , "• Flexural capacity of beam is insufficient.\n" +
-                                "• When cross section of the beam or reinforcement in beam is insufficient.\n" +
-                                "• Caused due to more than defined load."));
-                        break;
 
                     case 13:
-                        list2.add(new Expand("Characteristics :" , "• It generate in maximum moment region.\n" +
-                                "• Flexural crack may be single or in groups.\n" +
-                                "• Maximum width at the bottom or top of the beam.\n" +
-                                "• This type of crack also occurs in slab."));
-                        list2.add(new Expand("Possible reasons :" , "• Flexural capacity of beam is insufficient.\n" +
-                                "• When cross section of the beam or reinforcement in beam is insufficient.\n" +
-                                "• Caused due to more than defined load."));
-                        break;
 
                     case 14:
-                        list2.add(new Expand("Characteristics :" , "• It generate in maximum moment region.\n" +
-                                "• Flexural crack may be single or in groups.\n" +
-                                "• Maximum width at the bottom or top of the beam.\n" +
-                                "• This type of crack also occurs in slab."));
-                        list2.add(new Expand("Possible reasons :" , "• Flexural capacity of beam is insufficient.\n" +
-                                "• When cross section of the beam or reinforcement in beam is insufficient.\n" +
-                                "• Caused due to more than defined load."));
-                        break;
 
                     case 15:
                         list2.add(new Expand("Characteristics :" , "• It generate in maximum moment region.\n" +
@@ -207,57 +179,104 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                         list2.add(new Expand("Possible reasons :" , "• Flexural capacity of beam is insufficient.\n" +
                                 "• When cross section of the beam or reinforcement in beam is insufficient.\n" +
                                 "• Caused due to more than defined load."));
+                        list3[0] = true;
+                        list3[1] = true;
+                        list3[2] = true;
+                        list3[3] = false;
+                        list3[4] = false;
+                        list3[5] = false;
                         break;
 
                     case 16:
-                        list2.add(new Expand("Info :" , "• Due to decreases in the thermal temperature, the ground freezes. This ground movement due to freezing causes cracks in concrete which can be termed as heaving concrete crack."));
-                        break;
 
                     case 17:
                         list2.add(new Expand("Info :" , "• Due to decreases in the thermal temperature, the ground freezes. This ground movement due to freezing causes cracks in concrete which can be termed as heaving concrete crack."));
+                        list3[0] = false;
+                        list3[1] = false;
+                        list3[2] = false;
+                        list3[3] = true;
+                        list3[4] = false;
+                        list3[5] = false;
                         break;
 
                     case 18:
                         list2.add(new Expand("Characteristics :" , "• Occur at the beam column junction.\n" +
                                 "• Moment resistance capacity of column inadequate in the corresponding region.\n" +
                                 "• Inadequate quantum of reinforcement or disposition of reinforcement not satisfactory."));
+                        list3[0] = true;
+                        list3[1] = true;
+                        list3[2] = true;
+                        list3[3] = true;
+                        list3[4] = true;
+                        list3[5] = false;
                         break;
 
                     case 19:
                         list2.add(new Expand("Characteristics :" , "• Occur at the beam column junction.\n" +
                                 "• Moment resistance capacity of column inadequate in the corresponding region.\n" +
                                 "• Inadequate quantum of reinforcement or disposition of reinforcement not satisfactory."));
+                        list3[0] = true;
+                        list3[1] = true;
+                        list3[2] = true;
+                        list3[3] = true;
+                        list3[4] = false;
+                        list3[5] = false;
                         break;
 
                     case 20:
                         list2.add(new Expand("Info :" , "• Although concrete is a very strong building material, it does have its limits. Placing excessive amounts of weight on top of a concrete slab can cause cracking."));
+                        list3[0] = false;
+                        list3[1] = false;
+                        list3[2] = false;
+                        list3[3] = false;
+                        list3[4] = false;
+                        list3[5] = true;
                         break;
 
                     case 21:
-                        list2.add(new Expand("Characteristics :" , "• Plastic shrinkage cracks typically occur on horizontal surfaces exposed to the atmosphere.\n" +
-                                "• Plastic shrinkage cracks are typically two to four inches deep and approximately one-eighth inch wide.\n" +
-                                "• The cracks tend to follow the edges of large aggregate particles or reinforcing bars and never break through the aggregate particles.69" +
-                                ""));
-                        break;
 
                     case 22:
                         list2.add(new Expand("Characteristics :" , "• Plastic shrinkage cracks typically occur on horizontal surfaces exposed to the atmosphere.\n" +
                                 "• Plastic shrinkage cracks are typically two to four inches deep and approximately one-eighth inch wide.\n" +
                                 "• The cracks tend to follow the edges of large aggregate particles or reinforcing bars and never break through the aggregate particles.69" +
                                 ""));
+                        list3[0] = true;
+                        list3[1] = true;
+                        list3[2] = true;
+                        list3[3] = true;
+                        list3[4] = true;
+                        list3[5] = false;
                         break;
 
                     case 23:
                         list2.add(new Expand("Info :" , "• Crazing cracks are very fine, surface cracks that resemble spider webs or shattered glass. When the top of a concrete slab loses moisture too quickly, crazing cracks will likely appear. While unsightly, crazing cracks are not a structural concern.\n" +
                                 "• Crusting cracks typically happen during the concrete stamping process, which is a way of adding texture or pattern to concrete surfaces. "));
+                        list3[0] = false;
+                        list3[1] = false;
+                        list3[2] = false;
+                        list3[3] = false;
+                        list3[4] = true;
+                        list3[5] = true;
                         break;
 
                     case 24:
                         list2.add(new Expand("Info :" , "• When the void is created in the soil particles below the concrete surface, settling concrete cracks are formed."));
+                        list3[0] = true;
+                        list3[1] = true;
+                        list3[2] = true;
+                        list3[3] = true;
+                        list3[4] = true;
+                        list3[5] = false;
                         break;
 
                     case 25:
                         list2.add(new Expand("Info :" , "• When the void is created in the soil particles below the concrete surface, settling concrete cracks are formed."));
+                        list3[0] = false;
+                        list3[1] = false;
+                        list3[2] = false;
+                        list3[3] = false;
+                        list3[4] = true;
+                        list3[5] = true;
                         break;
 
                     case 26:
@@ -267,21 +286,36 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                         list2.add(new Expand("Possible reasons :" , "• Shear capacity of beam is insufficient.\n" +
                                 "• Cross section on torsional reinforcement is insufficient.\n" +
                                 "• Caused due to loaded more than define load."));
+                        list3[0] = true;
+                        list3[1] = false;
+                        list3[2] = true;
+                        list3[3] = false;
+                        list3[4] = true;
+                        list3[5] = false;
                         break;
 
                     case 27:
                         list2.add(new Expand("Info :" , "• This type of cracks are easy to identify as they are on the exterior side of the wall.\n" +
                                 "• The stair-stepping crack is caused by separation in the brick by shifting foundations."));
+                        list3[0] = true;
+                        list3[1] = false;
+                        list3[2] = true;
+                        list3[3] = true;
+                        list3[4] = false;
+                        list3[5] = false;
                         break;
 
                     case 28:
-                        list2.add(new Expand("Info :" , "• This type of cracks are easy to identify as they are on the exterior side of the wall.\n" +
-                                "• The stair-stepping crack is caused by separation in the brick by shifting foundations."));
-                        break;
 
                     case 29:
                         list2.add(new Expand("Info :" , "• This type of cracks are easy to identify as they are on the exterior side of the wall.\n" +
                                 "• The stair-stepping crack is caused by separation in the brick by shifting foundations."));
+                        list3[0] = false;
+                        list3[1] = false;
+                        list3[2] = false;
+                        list3[3] = false;
+                        list3[4] = true;
+                        list3[5] = false;
                         break;
 
                     case 30:
@@ -289,6 +323,12 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                                 "• Formed in single way, generally occurs in uniform width."));
                         list2.add(new Expand("Possible reasons :" , "•• Torsional strength of beam is insufficient.\n" +
                                 "• Cross section or torsional reinforcement is insufficient."));
+                        list3[0] = false;
+                        list3[1] = false;
+                        list3[2] = false;
+                        list3[3] = true;
+                        list3[4] = true;
+                        list3[5] = false;
                         break;
 
                     default:
@@ -438,6 +478,7 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                 }*/
 
                 i.putExtra("Ashwini" , list2);
+                i.putExtra("3000 bacche", list3);
                 cnt.startActivity(i);
             }
         });
