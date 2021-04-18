@@ -443,7 +443,7 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                 }*/
 
                 i.putExtra("Ashwini" , list2);
-                i.putExtra("3000 bacche", list3);
+                i.putExtra("IT", list3);
                 cnt.startActivity(i);
             }
         });

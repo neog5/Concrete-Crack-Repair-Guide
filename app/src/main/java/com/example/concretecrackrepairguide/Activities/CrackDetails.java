@@ -76,7 +76,7 @@ public class CrackDetails extends AppCompatActivity {
         LinearLayout horTech = findViewById(R.id.rt_linear_hori);
         LinearLayout expTech = findViewById(R.id.expand_techniques);
         RepTech repTech = new RepTech(false);
-        boolean[] list3 = it.getBooleanArrayExtra("3000 bacche");
+        boolean[] list3 = it.getBooleanArrayExtra("IT");
 
         rt = findViewById(R.id.rpt);
         epo = findViewById(R.id.epo);
