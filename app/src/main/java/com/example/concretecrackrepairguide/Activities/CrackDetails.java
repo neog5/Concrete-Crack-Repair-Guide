@@ -57,6 +57,9 @@ public class CrackDetails extends AppCompatActivity {
 
         ArrayList<Expand> list2 = it.getParcelableArrayListExtra("Ashwini");
 
+        /*ArrayList<Expand> list2 = new ArrayList<>();
+        list2.add(new Expand("Cons 1" , "This has 3 para" , R.drawable.expanding_background));
+        list2.add(new Expand("Cons 2" , "This has 4 para" , R.drawable.expanding_background2 , R.drawable.diagonal_crack));*/
 
 
 

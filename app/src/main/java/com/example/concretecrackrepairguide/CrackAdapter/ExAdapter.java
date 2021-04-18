@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -40,9 +41,17 @@ public class ExAdapter extends RecyclerView.Adapter<ExAdapter.ViewHolder2>{
         holder.rootL.setBackgroundResource(list2.get(position).getBackground());
         holder.title.setText(model.getTitle());
         holder.content.setText(model.getContent());
-        holder.content.setVisibility(list2.get(position).isExpanded() ? View.VISIBLE : View.GONE);
+        if (list2.get(position).getTableImage() != -1){
+            holder.table.setImageResource(list2.get(position).getTableImage());
+            holder.table.setVisibility(View.VISIBLE);
+        }
+        else {
+            holder.table.setVisibility(View.GONE);
+        }
+        holder.contentLL.setVisibility(list2.get(position).isExpanded() ? View.VISIBLE : View.GONE);
         holder.up.setVisibility(list2.get(position).isExpanded() ? View.VISIBLE : View.GONE);
         holder.down.setVisibility(list2.get(position).isExpanded() ? View.GONE : View.VISIBLE);
+
     }
 
     @Override
@@ -52,8 +61,8 @@ public class ExAdapter extends RecyclerView.Adapter<ExAdapter.ViewHolder2>{
 
     public class ViewHolder2 extends RecyclerView.ViewHolder {
         TextView title, content, up, down;
-        LinearLayout ll,rootL;
-
+        LinearLayout ll,rootL,contentLL;
+        ImageView table;
         public ViewHolder2(@NonNull View itemView) {
 
             super(itemView);
@@ -64,6 +73,8 @@ public class ExAdapter extends RecyclerView.Adapter<ExAdapter.ViewHolder2>{
             down = itemView.findViewById(R.id.down_arrow);
             ll = itemView.findViewById(R.id.ex_linear_hori);
             rootL = itemView.findViewById(R.id.sample_expand);
+            table = itemView.findViewById(R.id.table);
+            contentLL = itemView.findViewById(R.id.exlinear);
             ll.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

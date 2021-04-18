@@ -8,7 +8,14 @@
     android:orientation="vertical"
     android:background="#BFF38A"
     android:padding="15dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,14 +46,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/gr_rv"/>
 
-     <ImageView
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:src="@drawable/stepped_crack2"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/gr_rv1"/>
+    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

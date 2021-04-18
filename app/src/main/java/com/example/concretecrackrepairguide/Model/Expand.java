@@ -5,13 +5,31 @@ import android.os.Parcelable;
 
 public class Expand implements Parcelable {
     String title,content;
-    int background;
+    int background,tableImage;
     boolean expanded;
+
+    public Expand(String title, String content, int background, int tableImage) {
+        this.title = title;
+        this.content = content;
+        this.background = background;
+        this.tableImage = tableImage;
+        this.expanded = false;
+    }
+
+    public int getTableImage() {
+        return tableImage;
+    }
+
+    public void setTableImage(int tableImage) {
+        this.tableImage = tableImage;
+    }
 
     public Expand(String title, String content, int background) {
         this.title = title;
         this.content = content;
         this.background = background;
+        this.expanded = false;
+        this.tableImage = -1;
     }
 
     protected Expand(Parcel in) {
