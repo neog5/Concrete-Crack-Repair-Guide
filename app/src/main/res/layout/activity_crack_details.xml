@@ -24,7 +24,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:paddingTop="20dp" />
+                android:paddingTop="20dp"
+                android:adjustViewBounds="true"/>
 
             <TextView
                 android:id="@+id/main_text"
@@ -60,6 +61,7 @@
                         android:id="@+id/rpt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:text="Repair Techniques"
                         android:textColor="#0B0A0A"
                         android:textSize="22sp"

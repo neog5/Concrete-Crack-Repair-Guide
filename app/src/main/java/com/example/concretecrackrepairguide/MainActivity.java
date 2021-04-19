@@ -41,12 +41,12 @@ public class MainActivity extends AppCompatActivity {
         list.add(new CrackModel(R.drawable.heaving_concrete_crack_1, "Heaving Concrete Crack 1"));
         list.add(new CrackModel(R.drawable.horizontal_crack, "Horizontal Crack"));
         list.add(new CrackModel(R.drawable.horizontal_crack1, "Horizontal Crack 1"));
-        list.add(new CrackModel(R.drawable.overload, "Overload"));
-        list.add(new CrackModel(R.drawable.plastic_shrinkage, "Plastic Shrinkage"));
-        list.add(new CrackModel(R.drawable.plastic_shrinkage1, "Plastic Shrinkage 1"));
-        list.add(new CrackModel(R.drawable.premature_drying, "Preamature Drying"));
-        list.add(new CrackModel(R.drawable.settling, "Settling"));
-        list.add(new CrackModel(R.drawable.settling_1, "Settling 1"));
+        list.add(new CrackModel(R.drawable.overload, "Overloading Crack"));
+        list.add(new CrackModel(R.drawable.plastic_shrinkage, "Plastic Shrinkage Crack"));
+        list.add(new CrackModel(R.drawable.plastic_shrinkage1, "Plastic Shrinkage Crack 1"));
+        list.add(new CrackModel(R.drawable.premature_drying, "Preamature Drying Crack"));
+        list.add(new CrackModel(R.drawable.settling, "Settling Crack"));
+        list.add(new CrackModel(R.drawable.settling_1, "Settling Crack 1"));
         list.add(new CrackModel(R.drawable.shear_crack, "Shear Crack"));
         list.add(new CrackModel(R.drawable.stepped_crack, "Stepped Crack"));
         list.add(new CrackModel(R.drawable.stepped_crack1, "Stepped Crack 1"));

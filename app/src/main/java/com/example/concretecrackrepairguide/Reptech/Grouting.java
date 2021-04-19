@@ -47,7 +47,7 @@ public class Grouting extends AppCompatActivity {
                 "(5) Asphalt\n" +
                 "(6) Clay + Water\n" +
                 "(7) Admixtures\n" +
-                "\n"  , R.drawable.expanding_background2 , R.drawable.crazing1));
+                "\n"  , R.drawable.expanding_background2 , R.drawable.stitching_table1));
 
 
 

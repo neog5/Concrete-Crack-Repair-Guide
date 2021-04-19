@@ -20,22 +20,22 @@ public class Stitching extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stitching);
 
-        list.add(new Expand("1. Grind the crack across its surface to ensure it is smooth." , "" ,R.drawable.expanding_background2 , R.drawable.crazed_concrete1));
+        list.add(new Expand("1. Grind the crack across its surface to ensure it is smooth." , "" ,R.drawable.expanding_background2 , R.drawable.stitching_step1));
 
         //list.add(new Expand("2  " , "" ,R.drawable.expanding_background2 , R.drawable.crazed_concrete1));
 
-        list.add(new Expand("3. Cut the groove where the crack locks are to be installed. Crack locks should be spaced at 300mm to 450mm intervals." , "" ,R.drawable.expanding_background2 , R.drawable.crazed_concrete1));
+        list.add(new Expand("2. Cut the groove where the crack locks are to be installed. Crack locks should be spaced at 300mm to 450mm intervals." , "" ,R.drawable.expanding_background2 , R.drawable.stitching_step2));
 
-        list.add(new Expand("4. Clean the groove and remove any debris from it." , "" ,R.drawable.expanding_background2 , R.drawable.crazed_concrete1));
+        list.add(new Expand("3. Clean the groove and remove any debris from it." , "" ,R.drawable.expanding_background2 , R.drawable.stitching_step3));
 
-        list.add(new Expand("5.  Place the crack locks in the groove .  " , "" ,R.drawable.expanding_background2 ));
+        list.add(new Expand("4.  Place the crack locks in the groove .  " , "" ,R.drawable.expanding_background2 ));
 
-        list.add(new Expand("6. Seal it with epoxy resin and allow it to cure." , "" ,R.drawable.expanding_background2 , R.drawable.crazed_concrete1));
+        list.add(new Expand("5. Seal it with epoxy resin and allow it to cure." , "" ,R.drawable.expanding_background2 , R.drawable.stitching_step5));
 
-        list.add(new Expand("Some materials which can be used:\n" +
+        list.add(new Expand("Some materials which can be used:\n",
                 "1. Reinforcing bar:-\n" +
                 "Stainless steel with ultimate tensile strength – 1050N/mm2  to 1200N/mm2\n" +
-                "2. Grout Material:-\n" , "" ,R.drawable.expanding_background2 , R.drawable.crazed_concrete1));
+                "2. Grout Material:-\n" ,R.drawable.expanding_background2 , R.drawable.stitching_table1));
 
         recyclerView = findViewById(R.id.s_rv);
         ExAdapter adapter = new ExAdapter(list, this);

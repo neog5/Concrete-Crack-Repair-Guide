@@ -31,7 +31,7 @@ public class RoutingAndSealing extends AppCompatActivity {
                 "4. The groove is then cleaned by waterblasting, sandblasting or air blasting and allowed to dry.\n" +
                 "5. A sealant is placed into the dry groove and allowed to cure.\n" ,R.drawable.expanding_background2));
 
-        list.add(new Expand("Some materials used  " ,"" ,R.drawable.expanding_background2 , R.drawable.crazed_concrete1));
+        list.add(new Expand("Some materials used  " ,"" ,R.drawable.expanding_background2 , R.drawable.routing_table1));
 
 
 

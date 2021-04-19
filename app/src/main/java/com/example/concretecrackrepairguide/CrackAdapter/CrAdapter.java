@@ -286,7 +286,7 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                     case 30: //Torsional Crack
                         list2.add(new Expand("Characteristics  " , "• Generate nearer to the maximum torsional region.\n" +
                                 "• Formed in single way, generally occurs in uniform width.", R.drawable.expanding_background));
-                        list2.add(new Expand("Possible reasons  " , "•• Torsional strength of beam is insufficient.\n" +
+                        list2.add(new Expand("Possible reasons  " , "• Torsional strength of beam is insufficient.\n" +
                                 "• Cross section or torsional reinforcement is insufficient.", R.drawable.expanding_background));
                         list3[0] = false;
                         list3[1] = false;

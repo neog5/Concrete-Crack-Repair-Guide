@@ -43,7 +43,7 @@ public class EpoxyInjection extends AppCompatActivity {
                 "If the crack is vertical or inclined, the injection process should begin by pumping epoxy into the entry port at the lowest elevation until the epoxy level reaches the entry port above.\n" +
                 "For horizontal cracks, the injection should proceed from one end of the crack to the other in the same manner. The crack is full if the pressure can be maintained. If the pressure can not be maintained, the epoxy is still flowing into unfilled portions or leaking out of the crack.", R.drawable.expanding_background2));
 
-        list.add(new Expand("6. Remove the surface seal", "• After the injected epoxy has cured, the surface seal should be removed by grinding or other means as appropriate.", R.drawable.expanding_background2));
+        list.add(new Expand("6. Remove the surface seal", "• After the injected epoxy has cured, the surface seal should be removed by grinding or other means as appropriate.\n", R.drawable.expanding_background2, R.drawable.epoxy_table1));
 
 
         recyclerView = findViewById(R.id.ep_rv);

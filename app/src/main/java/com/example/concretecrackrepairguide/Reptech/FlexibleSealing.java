@@ -27,7 +27,7 @@ public class FlexibleSealing extends AppCompatActivity {
                 "• Visible signs of mould growth should be removed & treated with a fungicidal solutions.\n" +
                 "2. In flexible sealing, a recess is cut along  the line of the crack and filled with a suitable flexible material.\n" +
                 "3. The width of the recess and strain capacity of the sealing material, determine the movement of the joint that can be accommodated.\n",R.drawable.expanding_background2));
-        list.add(new Expand("Some materials which can be used  " ,"" ,R.drawable.expanding_background2 , R.drawable.crazed_concrete1));
+        list.add(new Expand("Some materials which can be used  " ,"" ,R.drawable.expanding_background2 , R.drawable.flexible_table1));
 
         recyclerView = findViewById(R.id.fs_rv);
         ExAdapter adapter = new ExAdapter(list, this);
