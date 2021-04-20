@@ -119,6 +119,8 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                     case 9: //Expansion crack
 
                     case 10: //Expansion crack 1
+
+                    case 11: //Expansion crack 2
                         list2.add(new Expand("Characteristics  " , "• Heat causes concrete to expand.\n" +
                                 "• The expanding force can be enough to cause concrete to crack", R.drawable.expanding_background));
                         list3[0] = true;
@@ -129,15 +131,15 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                         list3[5] = false;
                         break;
 
-                    case 11: //Flexure crack
+                    case 12: //Flexure crack
 
-                    case 12: //Flexure crack 1
+                    case 13: //Flexure crack 1
 
-                    case 13: //Flexure crack 2
+                    case 14: //Flexure crack 2
 
-                    case 14: //Flexure crack 3
+                    case 15: //Flexure crack 3
 
-                    case 15: //Flexure crack 4
+                    case 16: //Flexure crack 4
                         list2.add(new Expand("Characteristics  " , "• It generate in maximum moment region.\n" +
                                 "• Flexural crack may be single or in groups.\n" +
                                 "• Maximum width at the bottom or top of the beam.\n" +
@@ -153,9 +155,9 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                         list3[5] = false;
                         break;
 
-                    case 16: //Heaving concrete crack
+                    case 17: //Heaving concrete crack
 
-                    case 17: //Heaving concrete crack 1
+                    case 18: //Heaving concrete crack 1
                         list2.add(new Expand("Info  " , "• Due to decreases in the thermal temperature, the ground freezes. This ground movement due to freezing causes cracks in concrete which can be termed as heaving concrete crack.", R.drawable.expanding_background));
                         list3[0] = false;
                         list3[1] = false;
@@ -165,7 +167,7 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                         list3[5] = false;
                         break;
 
-                    case 18: //Horizontal crack
+                    case 19: //Horizontal crack
                         list2.add(new Expand("Characteristics  " , "• Occur at the beam column junction.\n" +
                                 "• Moment resistance capacity of column inadequate in the corresponding region.\n" +
                                 "• Inadequate quantum of reinforcement or disposition of reinforcement not satisfactory.", R.drawable.expanding_background));
@@ -177,7 +179,7 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                         list3[5] = false;
                         break;
 
-                    case 19: //Horizontal crack 1
+                    case 20: //Horizontal crack 1
                         list2.add(new Expand("Characteristics  " , "• Occur at the beam column junction.\n" +
                                 "• Moment resistance capacity of column inadequate in the corresponding region.\n" +
                                 "• Inadequate quantum of reinforcement or disposition of reinforcement not satisfactory.", R.drawable.expanding_background));
@@ -189,7 +191,7 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                         list3[5] = false;
                         break;
 
-                    case 20: //Overload
+                    case 21: //Overload
                         list2.add(new Expand("Info  " , "• Although concrete is a very strong building material, it does have its limits. Placing excessive amounts of weight on top of a concrete slab can cause cracking.", R.drawable.expanding_background));
                         list3[0] = false;
                         list3[1] = false;
@@ -199,9 +201,9 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                         list3[5] = true;
                         break;
 
-                    case 21: //Plastic shrinkage
+                    case 22: //Plastic shrinkage
 
-                    case 22: //Plastic shrinkage 1
+                    case 23: //Plastic shrinkage 1
                         list2.add(new Expand("Characteristics  " , "• Plastic shrinkage cracks typically occur on horizontal surfaces exposed to the atmosphere.\n" +
                                 "• Plastic shrinkage cracks are typically two to four inches deep and approximately one-eighth inch wide.\n" +
                                 "• The cracks tend to follow the edges of large aggregate particles or reinforcing bars and never break through the aggregate particles.69", R.drawable.expanding_background));
@@ -213,7 +215,7 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                         list3[5] = false;
                         break;
 
-                    case 23: //Premature Drying
+                    case 24: //Premature Drying
                         list2.add(new Expand("Info  " , "• Crazing cracks are very fine, surface cracks that resemble spider webs or shattered glass. When the top of a concrete slab loses moisture too quickly, crazing cracks will likely appear. While unsightly, crazing cracks are not a structural concern.\n" +
                                 "• Crusting cracks typically happen during the concrete stamping process, which is a way of adding texture or pattern to concrete surfaces.", R.drawable.expanding_background));
                         list3[0] = false;
@@ -224,7 +226,7 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                         list3[5] = true;
                         break;
 
-                    case 24: //Settling
+                    case 25: //Settling
                         list2.add(new Expand("Info  " , "• When the void is created in the soil particles below the concrete surface, settling concrete cracks are formed.", R.drawable.expanding_background));
                         list3[0] = true;
                         list3[1] = true;
@@ -234,7 +236,7 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                         list3[5] = false;
                         break;
 
-                    case 25: //Settling 1
+                    case 26: //Settling 1
                         list2.add(new Expand("Info  " , "• When the void is created in the soil particles below the concrete surface, settling concrete cracks are formed.", R.drawable.expanding_background));
                         list3[0] = false;
                         list3[1] = false;
@@ -244,7 +246,7 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                         list3[5] = true;
                         break;
 
-                    case 26: //Shear Crack
+                    case 27: //Shear Crack
                         list2.add(new Expand("Characteristics  " , "• Generate nearer to the supports of the beam\n" +
                                 "• It may be single or in groups.\n" +
                                 "• Maximum width at neutral axis region or at the bottom of the beam.", R.drawable.expanding_background));
@@ -259,7 +261,7 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                         list3[5] = false;
                         break;
 
-                    case 27: //Stepped Crack
+                    case 28: //Stepped Crack
                         list2.add(new Expand("Info  " , "• This type of cracks are easy to identify as they are on the exterior side of the wall.\n" +
                                 "• The stair-stepping crack is caused by separation in the brick by shifting foundations.", R.drawable.expanding_background));
                         list3[0] = true;
@@ -270,9 +272,9 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                         list3[5] = false;
                         break;
 
-                    case 28: //Stepped Crack 1
+                    case 29: //Stepped Crack 1
 
-                    case 29: //Stepped Crack 2
+                    case 30: //Stepped Crack 2
                         list2.add(new Expand("Info  " , "• This type of cracks are easy to identify as they are on the exterior side of the wall.\n" +
                                 "• The stair-stepping crack is caused by separation in the brick by shifting foundations.", R.drawable.expanding_background));
                         list3[0] = false;
@@ -283,7 +285,7 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                         list3[5] = false;
                         break;
 
-                    case 30: //Torsional Crack
+                    case 31: //Torsional Crack
                         list2.add(new Expand("Characteristics  " , "• Generate nearer to the maximum torsional region.\n" +
                                 "• Formed in single way, generally occurs in uniform width.", R.drawable.expanding_background));
                         list2.add(new Expand("Possible reasons  " , "• Torsional strength of beam is insufficient.\n" +
@@ -295,6 +297,8 @@ public class CrAdapter extends RecyclerView.Adapter<CrAdapter.ViewHolder1>{
                         list3[4] = true;
                         list3[5] = false;
                         break;
+
+
 
                     default:
                         break;

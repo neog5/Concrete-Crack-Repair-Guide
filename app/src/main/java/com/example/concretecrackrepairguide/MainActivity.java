@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new CrackModel(R.drawable.diagonal_crack2, "Diagonal Crack 2"));
         list.add(new CrackModel(R.drawable.expansion, "Expansion Crack"));
         list.add(new CrackModel(R.drawable.expansion_crack1, "Expansion Crack 1"));
+        list.add(new CrackModel(R.drawable.expansion_crack2, "Expansion Crack 2"));
         list.add(new CrackModel(R.drawable.flexure_crack, "Flexure Crack"));
         list.add(new CrackModel(R.drawable.flexure_crack1, "Flexure Crack 1"));
         list.add(new CrackModel(R.drawable.flexure_crack2, "Flexure Crack 2"));
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new CrackModel(R.drawable.stepped_crack1, "Stepped Crack 1"));
         list.add(new CrackModel(R.drawable.stepped_crack2, "Stepped Crack 2"));
         list.add(new CrackModel(R.drawable.torsional_crack, "Torsional Crack"));
-        list.add(new CrackModel(R.drawable.corrosion_crack_beam, "Crack Details"));
+        //list.add(new CrackModel(R.drawable.corrosion_crack_beam, "Crack Details"));
 
 
         CrAdapter adapter = new CrAdapter(list, this);
